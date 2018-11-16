@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    <h1>666</h1>
+    <h1 v-html = 'msg'></h1>
+    <h1 v-text = 'msg'></h1>
+    <input type="text" v-model="msg">
+    <h1>{{msg}}</h1>
+  </div>
+  <script src="./src/watcher.js"></script>
+  <script src="./src/observe.js"></script>
+  <script src="./src/vue.js"></script>
+  <script src="./src/compile.js"></script>
+  <script>
+    let vm = new Vue({
+      el: '#app',
+      data: {
+        msg: 'success?'
+      }
+    })
+    function aa() {
+      console.log(aaa)
+    }
+    let aaa = '678'
+    aa()
+  </script>
+</body>
+</html>
